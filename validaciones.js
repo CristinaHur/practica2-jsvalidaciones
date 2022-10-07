@@ -1,7 +1,6 @@
-
 window.onload=empezar;
-  function empezar(){
-    document.formulario.validar.onclick=codigosControl;
+function empezar(){
+  document.formulario.validar.onclick=codigosControl;
 }
 
 
@@ -9,13 +8,15 @@ window.onload=empezar;
 
 
 
-
-
-
 function codigosControl(){
-  let codBanco;
-  let numSucursal;
-  let numCuenta;
+  let codBanco=document.formulario.codbanco.value;
+  let numSucursal=document.formulario.codoficina.value;
+  let numCuenta=document.formulario.numcuenta.value;
+ if(){
+   
+ 
+   
+ }
  
   
 
