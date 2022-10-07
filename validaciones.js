@@ -1,5 +1,8 @@
 
-
+window.onload=empezar;
+  function empezar(){
+    document.formulario.validar.onclick=codigosControl;
+}
 
 
 
