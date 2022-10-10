@@ -32,7 +32,7 @@ function comprobarIBAN(iban){
     let valid = false;
     if (iban.length > 18) {
     const bigIban = BigInt(iban.join(""));
-    if ( bigIban % 97n == 1n ) {valid = true;} {
+    if ( bigIban % 97n == 1n ) {
         valid = true;
     }
     }
