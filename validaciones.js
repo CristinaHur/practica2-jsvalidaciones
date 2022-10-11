@@ -8,10 +8,6 @@ function empezar(){
 
 
 
-
-
-
-
 function codigosControl(){
     let codBanco=document.formulario.codbanco.value;
     let numSucursal=document.formulario.codoficina.value;
@@ -27,6 +23,9 @@ function codigosControl(){
     let modulo2=parseInt(11-resto2);
     let aux;
     let aux1;
+    let errorcodB="Hay algún valor incorrecto en el Código del banco";
+    let errornumS="Hay algún valor incorrecto en el Código de Oficina";
+    let errornumC="Hay algún valor incorrecto en el Número de cuenta";
     if (modulo1==10) {
       aux="1";
      
@@ -44,12 +43,18 @@ function codigosControl(){
     } if(modulo2==11) {
       aux1= "2";
  
-   } if(modulo2<10){
+   } if(modulo2<10 ){
     aux1 = modulo2;
-  
-
-   
-  
   }
-  document.formulario.codcontrol.value=aux +""+ aux1;
+  document.formulario.codcontrol.value=aux +""+aux1;
+  if(codBanco.length<4 || (codBanco<"z" && codBanco>"a")){
+    alert(errorcodB)
+  }
+  if(numSucursal.length<4 || (numSucursal<"z" && numSucursal>"a")){
+    alert(errornumS)
+  }
+  if(numCuenta.length<10 || (numCuenta<"z" && numCuenta>"a")){
+    alert(errornumC)
+  }
+
 }
