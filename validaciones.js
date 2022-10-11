@@ -51,5 +51,5 @@ function codigosControl(){
    
   
   }
-  document.formulario.codcontrol.value=aux += aux1;
+  document.formulario.codcontrol.value=aux +""+ aux1;
 }
