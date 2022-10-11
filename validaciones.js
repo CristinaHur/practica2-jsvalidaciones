@@ -47,13 +47,14 @@ function codigosControl(){
     aux1 = modulo2;
   }
   document.formulario.codcontrol.value=aux +""+aux1;
-  if(codBanco.length<4 || codBanco<0000 || (codBanco<"z" && codBanco>"a")){
+  if(codBanco.length<4 || codBanco.length>4 ){
     alert(errorcodB)
   }
-  if(numSucursal.length<4 || numSucursal<0000 || (numSucursal<"z" && numSucursal>"a")){
+  if(numSucursal.length<4 || numSucursal.length>4  || (numSucursal<"z" && numSucursal>"a")){
     alert(errornumS)
   }
-  if(numCuenta.length<10 || numCuenta<0000000000 ||(numCuenta<"z" && numCuenta>"a")){
+  if(numCuenta.length<10 || numCuenta.length>10 ||(numCuenta<"z" && numCuenta>"a")){
     alert(errornumC)
   }
+
 }
