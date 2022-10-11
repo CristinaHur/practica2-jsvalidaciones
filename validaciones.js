@@ -33,7 +33,7 @@ function codigosControl(){
     } if(modulo1==11) {
       aux="0";
    
-    }if((modulo1<10) && (modulo1>0)) {
+    }if((modulo1<10) ) {
       aux=modulo1;
   
     }
@@ -44,7 +44,7 @@ function codigosControl(){
     } if(modulo2==11) {
       aux1= "2";
  
-   } if(modulo2<10 && modulo2>0){
+   } if(modulo2<10){
     aux1 = modulo2;
   
 
