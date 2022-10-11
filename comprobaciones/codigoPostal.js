@@ -1,5 +1,5 @@
 function esCodigoPostal(element1, elProvince){
-    let patern = /\d{5}/
+    let patern = /^\d{5}$/
     if (!patern.test(element1.value)) {
         element1.value = "No valido"
         elProvince.value = "";
