@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <script src="codigoPostal.js"></script>
+    </head>
+    <header>
+        <title>Formulario</title>
+    </header>
+    <h1>Formulario recogida de datos de las empresas</h1>
+    <body>
+        <form>
+            Razon social/Apellidos y nombre <input type="text" name="nombre"/><br><br>
+            Codigo de la Empresa <input type="text" name="codempresa"/><br><br>
+            CIF/NIF de la Empresa <input type="text" name="cifnif"/><br><br>
+            <fieldset>
+                <legend>Tipo de persona</legend>
+                <label>
+                    <input type="radio" name="tipopersona" value="juridica"/>Juridica
+                </label>
+                <label>
+                    <input type="radio" name="tipopersona" value="fisica"/>Fisica
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Domicilio Social/Particular</legend>
+                Direccion <input type="text" name="direccion"/>
+                Telefono <input type="text" name="telefono"/><br><br>
+                Localidad <input type="text" name="localidad"/>
+                Codigo Postal <input type="text" name="codpostal" onchange="esCodigoPostal(codpostal, provincia)"/><br><br>
+                Provincia <input type="text" name="provincia"/>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Datos Bancarios</legend>
+                Codigos del banco <input type="text" name="codbanco"/><br><br>
+                Codigo oficina <input type="text" name="codoficina"/><br><br>
+                Codigo control <input type="text" name="codcontrol"/><br><br>
+                Numero de cuenta <input type="text" name="numcuenta"/><br><br>
+                IBAN <input type="text" name="iban"/><br>
+            </fieldset>
+            <br>
+            Fecha Constitucion Empresa <input type="date"/><br><br>
+            Numero de trabajadores <input type="number"><br><br>
+            Numero de Fabricas de la Empresa <input type="number"><br><br>
+            <fieldset name="comunidades">
+            <legend>Comunidades en las que hay fabricas</legend>
+                <label><input type="checkbox" name="comunidad1" value="andalucia"/> Andalucía</label>
+                <label><input type="checkbox" name="comunidad2" value="aragon"/> Aragón</label>
+                <label><input type="checkbox" name="comunidad3" value="baleares"/> Islas Baleares</label>
+                <label><input type="checkbox" name="comunidad4" value="canarias"/> Canarias</label>
+                <label><input type="checkbox" name="comunidad5" value="cantabria"/> Cantabria</label>
+                <label><input type="checkbox" name="comunidad6" value="mancha"/> Castilla-La Mancha</label><br>
+                <label><input type="checkbox" name="comunidad7" value="leon"/> Castilla y León</label>
+                <label><input type="checkbox" name="comunidad8" value="cataluna"/> Cataluña</label> 
+                <label><input type="checkbox" name="comunidad9" value="madrid"/> Comunidad de Madrid</label>
+                <label><input type="checkbox" name="comunidad10" value="navarra"/> Comunidad Foral de Navarra</label><br>
+                <label><input type="checkbox" name="comunidad11" value="valencia"/> Comunidad Valenciana</label>
+                <label><input type="checkbox" name="comunidad12" value="extremadura"/> Extremadura</label>
+                <label><input type="checkbox" name="comunidad13" value="galicia"/> Galicia</label>
+                <label><input type="checkbox" name="comunidad14" value="pvasco"/> País Vasco</label>
+                <label><input type="checkbox" name="comunidad15" value="asturias"/> Principado de Asturias</label><br>
+                <label><input type="checkbox" name="comunidad16" value="murcia"/> Región de Murcia</label>
+                <label><input type="checkbox" name="comunidad17" value="rioja"/> La Rioja</label>
+            </fieldset>
+            <br>
+            <fieldset name="sectores">
+                <legend>Sector/es economicos</legend>
+                <label><input type="checkbox" name="sector1" value="alimentacion"/> Alimentacion</label>
+                <label><input type="checkbox" name="sector2" value="informatica"/> Informatica</label>
+                <label><input type="checkbox" name="sector3" value="comercio"/> Comercio</label>
+                <label><input type="checkbox" name="sector4" value="construccion"/> Construccion</label>
+                <label><input type="checkbox" name="sector5" value="hosteleria"/> Hosteleria</label>
+                <label><input type="checkbox" name="sector6" value="automocion"/> Automocion</label>
+                <label><input type="checkbox" name="sector7" value="calzado"/> Calzado</label>
+                <label><input type="checkbox" name="sector8" value="turismo"/> Turismo</label>
+                <label><input type="checkbox" name="sector9" value="agricultura"/> Agricultura</label>
+                <label><input type="checkbox" name="sector10" value="ganaderia"/> Ganaderia</label>
+                <label><input type="checkbox" name="sector11" value="otros"/> Otros</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Tipo de Empresa</legend>
+                <label><input type="checkbox" name="tipo1" value="sa"/> S.A.</label>
+                <label><input type="checkbox" name="tipo2" value="sl"/> S.L.</label>
+                <label><input type="checkbox" name="tipo3" value="sal"/> S.A.L.</label>
+                <label><input type="checkbox" name="tipo4" value="cooperativa"/> Cooperativa</label>
+                <label><input type="checkbox" name="tipo5" value="autonomo"/> Automomo</label>
+                <label><input type="checkbox" name="tipo6" value="otro"/> Otro</label>
+            </fieldset>
+            <br>
+            <input type="button" value="Validar">   
+            <input type="reset" value="Limpiar">
+        </form>
+    </body>
+</html>
